@@ -1,7 +1,7 @@
 ---
 title: AirCnC | AirCnC property
 ---
-<%  wrap_layout :layout do %>
+
 <% flat = data.flats[owner] %>
 
 <div id="flat-wrapper" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');">
@@ -24,4 +24,4 @@ title: AirCnC | AirCnC property
       <p><%= flat.city_slug.capitalize %></p>
   </div>
 </div>
-<% end %>
+
