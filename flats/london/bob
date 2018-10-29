@@ -6,16 +6,16 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title>AirCnC | Meet the team</title>
-    <link href="../stylesheets/application-e8f507ef.css" rel="stylesheet" />
-    <script src="../javascripts/application-93de88c9.js"></script>
-    <link href="../images/favicon-f15af148.png" rel="icon" type="image/png" />
+    <title>AirCnC | AirCnC property</title>
+    <link href="/stylesheets/application-e8f507ef.css" rel="stylesheet" />
+    <script src="/javascripts/application-93de88c9.js"></script>
+    <link href="/images/favicon-f15af148.png" rel="icon" type="image/png" />
   </head>
   <body>
     <div class="navbar-wagon">
   <!-- Logo -->
   <a href="/" class="navbar-wagon-brand">
-    <img src="../images/logo-acc9c0ec.png" alt="le wagon logo" />
+    <img src="/images/logo-acc9c0ec.png" alt="le wagon logo" />
   </a>
 
   <!-- Right Navigation -->
@@ -52,19 +52,25 @@
 </div>
 
     <div class="main-container">
-      <div class="center-on-page">
-  <div class="team-content">
-    <h1 class="text-center">Today's team:</h1>
-    <ul class="list-inline text-center">
-      <li>
-        <img src="https://avatars2.githubusercontent.com/u/43278081?v=4" class="avatar" alt="43278081?v=4" />
-        <p>Alice Picot</p>
-      </li>
-      <li>
-        <img src="https://avatars1.githubusercontent.com/u/43235608?v=4" class="avatar" alt="43235608?v=4" />
-        <p>Joseph Johansen</p>
-      </li>
-    </ul>
+      
+<div id="flat-wrapper" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/london');">
+  <div class="booking-form">
+    <h2>Book this property</h2>
+    <form action="">
+      <input type="text" placeholder="checkin" class="form-control">
+      <input type="text" placeholder="checkout" class="form-control">
+      <select name="number-of-guests" class="form-control">
+        <option value="1-guest" class="form-control">1 guest</option>
+        <option value="2-guest" class="form-control">2 guests</option>
+        <option value="3-guest" class="form-control">3 guests</option>
+      </select>
+      <input type="submit" value="Confirm" class="form-control btn btn-success">
+    </form>
+  </div>
+  <div id="flat-card">
+      <p>Bob's home</p>
+      <p>Nice flat in Piccadilly</p>
+      <p>London</p>
   </div>
 </div>
 
