@@ -19,7 +19,7 @@ end
 activate :directory_indexes
 
 data.flats.each do |person, flat_info|
-  proxy "/flats/#{flat_info.city_slug}/#{person}", "/show.html", locals: { owner: person }, ignore: true
+  proxy "/flats/#{flat_info.city_slug}/#{person}.html", "/show.html", locals: { owner: person }, ignore: true
 end
 
 activate :deploy do |deploy|
