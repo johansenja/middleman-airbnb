@@ -1,0 +1,27 @@
+---
+title: AirCnC | AirCnC property
+---
+<%  wrap_layout :layout do %>
+<% flat = data.flats[owner] %>
+
+<div id="flat-wrapper" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');">
+  <div class="booking-form">
+    <h2>Book this property</h2>
+    <form action="">
+      <input type="text" placeholder="checkin" class="form-control">
+      <input type="text" placeholder="checkout" class="form-control">
+      <select name="number-of-guests" class="form-control">
+        <option value="1-guest" class="form-control">1 guest</option>
+        <option value="2-guest" class="form-control">2 guests</option>
+        <option value="3-guest" class="form-control">3 guests</option>
+      </select>
+      <input type="submit" value="Confirm" class="form-control btn btn-success">
+    </form>
+  </div>
+  <div id="flat-card">
+      <p><%= flat.name %></p>
+      <p><%= flat.description %></p>
+      <p><%= flat.city_slug.capitalize %></p>
+  </div>
+</div>
+<% end %>

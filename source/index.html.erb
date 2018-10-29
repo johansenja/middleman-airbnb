@@ -6,25 +6,24 @@ title: AirCnC | Where will your next journey take you?
   <div class="banner-content">
     <h1>AirCnC</h1>
     <p>Where will your next journey take you?</p>
-    <a class="btn btn-primary btn-lg">Start now</a>
+    <%= link_to "Start now","#tiles", class: "btn btn-primary btn-lg"  %>
   </div>
 </div>
 <div class="full-width text-center">
   <h2>Meet the team:</h2>
   <%= link_to "Our Team", "team.html", class: "btn btn-warning btn-large" %>
 </div>
-<div class="row">
-  <% cities = %w(london paris shanghai rio berlin bali amsterdam lyon barcelona tel-aviv marseilles brussels) %>
-  <% cities.each do |city| %>
+<div class="row" id="tiles">
+  <% flats = data.flats%>
+  <% flats.each do |flat, flat_info| %>
     <div class="col-xs-12 col-sm-6 col-md-3">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= city %>');">
-        <div class="card-category">Popular</div>
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= flat_info.city_slug %>');">
+        <div class="card-category"><%= flat_info.city_name %></div>
         <div class="card-description">
-          <h2><%= city.capitalize %></h2>
-          <p>Very cool city, the best</p>
+          <h2><%= flat_info.name %></h2>
+          <p><%= flat_info.description %></p>
         </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-      <a class="card-link" href="#" ></a>
+      <%= link_to "", "/flats/#{flat_info.city_slug}/#{flat}", class: "card-link" %>
       </div>
     </div>
     <% end %>

@@ -1,0 +1,56 @@
+joseph:
+  name: "Joseph's home"
+  description: "Charming room in Montmartre"
+  city_name: "Paris, France"
+  city_slug: "paris"
+  wifi: false
+  rating: 4
+fred:
+  name: "Fred's home"
+  description: Small flat in Tokyo
+  city_name: "Tokyo, Japan"
+  city_slug: "tokyo"
+  wifi: true
+  rating: 3
+bob:
+  name: Bob's home
+  description: Nice flat in Piccadilly
+  city_name: "London, UK"
+  city_slug: "london"
+  wifi: true
+  rating: 5
+helena:
+  name: Helena's house
+  description: Spacious house with a large garden.
+  city_name: "Bordeaux, France"
+  city_slug: "bordeaux"
+  wifi: true
+  rating: 5
+alice:
+  name: Alice's flat
+  description: Ridiculous penthouse in Melbourne
+  city_name: "Melbourne, AUS"
+  city_slug: "melbourne"
+  wifi: true
+  rating: 5
+eleanor:
+  name: Eleanor's home
+  description: Nice flat in central Chengdu
+  city_name: "Chengdu, China"
+  city_slug: "chengdu"
+  wifi: false
+  rating: 5
+geoff:
+  name: Geoff's appartment
+  description: Modern appartment in the centre of town
+  city_name: "Montreal, Canada"
+  city_slug: "montreal"
+  wifi: true
+  rating: 5
+richard:
+  name: Richard's appartment
+  description: Cosy flat in Casablanca
+  city_name: "Casablanca, Morocco"
+  city_slug: "casablanca"
+  wifi: true
+  rating: 5

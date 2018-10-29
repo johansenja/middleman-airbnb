@@ -1,0 +1,43 @@
+
+#flat-wrapper {
+  color: $white;
+  background-size: cover !important;
+  height: 100vh;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  p {
+    font-size: 18px;
+    font-weight: lighter;
+    color: $white;
+    opacity: 0.65;
+    margin-bottom: 10px;
+  }
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $light-gray;
+  color: $gray;
+  padding:15px;
+  border-radius: 10px;
+  input {
+    margin:10px 0;
+  }
+}
+
+#flat-card {
+  position:relative;
+  top: 15vh;
+  right: 15vw;
+}
+
+@media only screen and (min-width: 700px) {
+    #flat-card {
+      right: 30vw;
+    }
+}

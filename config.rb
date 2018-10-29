@@ -16,9 +16,13 @@ configure :build do
   set :relative_links, true
 end
 
+activate :directory_indexes
+
+data.flats.each do |person, flat_info|
+  proxy "/flats/#{flat_info.city_slug}/#{person}", "/show.html", locals: { owner: person }, ignore: true
+end
+
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
 end
-
-activate :directory_indexes
